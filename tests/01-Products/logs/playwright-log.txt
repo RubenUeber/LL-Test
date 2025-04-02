@@ -1,35 +1,45 @@
-{"level":30,"time":"2025-04-01T02:07:23.210Z","pid":6512,"hostname":"DESKTOP-6AT303V","msg":"Listening on 57769"}
-(node:6512) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2025-04-02T15:19:01.960Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Listening on 50519"}
+(node:17624) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-02T15:19:02.272Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-02T15:19:03.016Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Adding browser to stack: chromium, version: 131.0.6778.33"}
+{"level":30,"time":"2025-04-02T15:19:03.017Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-02T15:19:03.017Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-02T15:19:03.026Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Start of node method newContext"}
+{"level":30,"time":"2025-04-02T15:19:03.026Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Creating new context with options: {\"acceptDownloads\":true,\"bypassCSP\":false,\"forcedColors\":\"none\",\"ignoreHTTPSErrors\":false,\"javaScriptEnabled\":true,\"offline\":false,\"reducedMotion\":\"no-preference\",\"serviceWorkers\":\"allow\",\"viewport\":{\"width\":1366,\"height\":768}}"}
+{"level":30,"time":"2025-04-02T15:19:03.026Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-02T15:19:03.026Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Trace file: "}
+{"level":30,"time":"2025-04-02T15:19:03.047Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Changed active context"}
+{"level":30,"time":"2025-04-02T15:19:03.048Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"End of node method newContext"}
+{"level":30,"time":"2025-04-02T15:19:03.056Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-02T15:19:03.056Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-02T15:19:03.931Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-02T15:19:03.931Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Changed active page"}
+{"level":30,"time":"2025-04-02T15:19:06.837Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-02T15:19:06.872Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-04-02T15:19:06.873Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Strict mode is enabled, find Locator with id=\"login--email\" in page."}
+{"level":30,"time":"2025-04-02T15:19:19.133Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Removed page=2cfaab1d-2321-4e38-80c9-d7572756dff3 from context=baa0bb6f-2b49-4aeb-b261-0aa06220855e page stack"}
+{"level":30,"time":"2025-04-02T15:19:19.139Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Error of node method  fillText"}
 ================= Original suppressed error =================
-Error: Browser has been closed.
-    at PlaywrightState.getActiveBrowser (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:12223:15)
-    at PlaywrightServer.getActiveBrowser (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13119:59)
-    at PlaywrightServer.setTimeout (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13367:57)
-    at Object.onReceiveHalfClose (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
-    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
-    at ServerHttp2Stream.<anonymous> (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
-    at ServerHttp2Stream.emit (node:events:530:35)
-    at endReadableNT (node:internal/streams/readable:1696:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+locator.fill: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('id="login--email"')[22m
+
+    at fillText (C:\Users\56001601000173\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11827:17)
+    at async PlaywrightServer.fillText (C:\Users\56001601000173\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13107:28)
 =============================================================
-{"level":30,"time":"2025-04-01T02:07:23.622Z","pid":6512,"hostname":"DESKTOP-6AT303V","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-01T02:07:23.623Z","pid":6512,"hostname":"DESKTOP-6AT303V","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-02T15:19:19.229Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Start of node method takeScreenshot"}
 ================= Original suppressed error =================
-Error: Browser has been closed.
-    at PlaywrightState.getActiveBrowser (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:12223:15)
-    at PlaywrightServer.getActiveBrowser (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13119:59)
-    at PlaywrightServer.setTimeout (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13367:57)
-    at Object.onReceiveHalfClose (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
-    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
-    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
-    at ServerHttp2Stream.<anonymous> (C:\Users\Ruben\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
-    at ServerHttp2Stream.emit (node:events:530:35)
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\56001601000173\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Users\56001601000173\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\56001601000173\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13107:34)
+    at Object.onReceiveHalfClose (C:\Users\56001601000173\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\56001601000173\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\56001601000173\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\56001601000173\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:532:35)
     at endReadableNT (node:internal/streams/readable:1696:12)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
 =============================================================
-{"level":30,"time":"2025-04-01T02:07:23.705Z","pid":6512,"hostname":"DESKTOP-6AT303V","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-01T02:07:23.706Z","pid":6512,"hostname":"DESKTOP-6AT303V","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-04-01T02:07:23.821Z","pid":6512,"hostname":"DESKTOP-6AT303V","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2025-04-01T02:07:23.822Z","pid":6512,"hostname":"DESKTOP-6AT303V","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-02T15:19:19.230Z","pid":17624,"hostname":"DESKTOP-K13JS6Q","msg":"Error of node method  takeScreenshot"}
